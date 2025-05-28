@@ -6,22 +6,24 @@
     <title>Weather Now</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
-<body>
-<h1>Confira o Clima Agora!</h1>
-<form action="/weather" method="POST">
-    <label for="city">Digite o nome da cidade:</label>
-    <input type="text" id="city" name="city" placeholder="Ex: São Paulo">
-    <button type="submit">Buscar Clima</button>
-</form>
+<body class="<%= locals.weatherClass %>">
+    <h1>Confira o Clima Agora!</h1>
+    <form action="/weather" method="POST">
+        <label for="city">Digite o nome da cidade:</label>
+        <input type="text" id="city" name="city" placeholder="Ex: São Paulo">
+        <button type="submit">Buscar Clima</button>
+    </form>
 
-<div id="weather-container">
-    <% if (locals.dadosTempo) { %>
-        <h2>Clima em <%= dadosTempo.name %></h2>
-        <p>Temperatura: <%= (dadosTempo.main.temp - 273.15).toFixed(2) %> °C</p>
-        <p>Descrição: <%= dadosTempo.weather[0].description %></p>
-    <% } %>
+    <div id="weather-container">
+        <% if (locals.dadosTempo) { %>
+            <h2>Clima em <%= dadosTempo.name %></h2>
+            <p>Temperatura: <%= (dadosTempo.main.temp - 273.15).toFixed(2) %> °C</p>
+            <p>Descrição: <%= dadosTempo.weather[0].description %></p>
+        <% } %>
 
-    <% if (locals.errorMessage) { %>
-        <p style="color: red;"><%= errorMessage %></p>
-    <% } %>
-</div>
+        <% if (locals.errorMessage) { %>
+            <p style="color: red;"><%= errorMessage %></p>
+        <% } %>
+    </div>
+</body>
+</html>
