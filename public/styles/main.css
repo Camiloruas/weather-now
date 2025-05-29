@@ -117,7 +117,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100vw;
-    background: linear-gradient(to right, rgba(110, 198, 255, 0.7), rgba(178, 247, 255, 0.7));
+    background: linear-gradient(to right, rgba(110, 198, 255, 0.45), rgba(178, 247, 255, 0.45));
     color: rgb(10, 0, 0);
     text-align: center;
     padding: 7px 0 5px 0;
