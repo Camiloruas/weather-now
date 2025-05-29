@@ -2,7 +2,7 @@
 
 Um aplicativo web simples e funcional para verificar o clima em qualquer cidade do mundo. Desenvolvido como um projeto de aprendizado para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
 
-🔗 [Acesse o aplicativo](https://thawing-basin-71658-407b69e3d106.herokuapp.com/weather)
+🔗 [Acesse o aplicativo](https://thawing-basin-71658-407b69e3d106.herokuapp.com)
 
 ## 📸 Visão Geral
 
