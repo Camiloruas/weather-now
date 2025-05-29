@@ -114,9 +114,11 @@ button:hover {
 /* Footer estilizado fixo ao rodapé */
 footer {
     position: fixed;
-    left: 0;
+    left: 50%;
     bottom: 0;
-    width: 100vw;
+    transform: translateX(-50%);
+    width: 340px;
+    max-width: 90vw;
     background: linear-gradient(to right, rgba(110, 198, 255, 0.45), rgba(178, 247, 255, 0.45));
     color: rgb(10, 0, 0);
     text-align: center;
@@ -135,8 +137,6 @@ footer {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
-
-
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 600px) {
