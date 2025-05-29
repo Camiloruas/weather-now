@@ -120,18 +120,18 @@ footer {
     background: linear-gradient(to right, #008cff, #00f2fe);
     color: rgb(10, 0, 0);
     text-align: center;
-    padding: 18px 0 14px 0;
-    font-size: 1.00rem;
+    padding: 7px 0 5px 0;
+    font-size: 0.92rem;
     letter-spacing: 1px;
     box-shadow: 0 -2px 12px rgba(0,0,0,0.12);
     z-index: 100;
-    font-weight: 500;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    font-weight: 400;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
 }
 
 
