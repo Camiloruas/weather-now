@@ -56,6 +56,7 @@ app.post("/weather", async(req, res)=> {
 })
 
 
-app.listen(port, ()=>{
-    console.log("Servidor rodando na porta " + port)
+const herokuPort = process.env.PORT || 3000;
+app.listen(herokuPort, ()=>{
+    console.log("Servidor rodando na porta " + herokuPort)
 })
