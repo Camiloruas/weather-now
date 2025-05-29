@@ -1,4 +1,4 @@
-# 🌦️ Weather Now
+ 🌦️ Weather Now
 
 Um aplicativo web simples e funcional para verificar o clima em qualquer cidade do mundo. Desenvolvido como um projeto de aprendizado para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
 
@@ -19,7 +19,7 @@ Tudo isso em uma interface simples e intuitiva.
 ## 🛠️ Tecnologias Utilizadas
 
 - **Node.js** – ambiente de execução JavaScript no back-end  
-- **Express.js** – framework leve para criação do servidor  
+- **Express** – framework leve para criação do servidor  
 - **EJS** – templates para renderização dinâmica do HTML  
 - **Axios** – cliente HTTP para chamadas à API do clima  
 - **dotenv** – gerenciador de variáveis de ambiente  
@@ -36,58 +36,71 @@ Tudo isso em uma interface simples e intuitiva.
 
 ---
 
+
 ## 🚀 Como Rodar Localmente
 
 1. **Clone o repositório**
+
    ```bash
-   git clone https://github.com/Camiloruas/weather-now.git
    cd weather-now
-Instale as dependências
+   git clone https://github.com/Camiloruas/weather-now.git
+   ```
 
-bash
-Copiar
-Editar
-npm install
-Crie um arquivo .env com sua chave da OpenWeather API
 
-env
-Copiar
-Editar
-OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
-Inicie o servidor
 
-bash
-Copiar
-Editar
-npm start
-Acesse em seu navegador
+2. **Instale as dependências**
+   ```bash
+   npm install express ejs axios dotenv
+   ```
 
-bash
-Copiar
-Editar
-http://localhost:3000/weather
-📚 Aprendizados
+
+3. **Crie um arquivo `.env` com sua chave da OpenWeather API**
+   ```bash
+    OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
+    ```
+
+4. **Inicie o servidor**
+
+   ```bash
+   npm start
+   ```
+
+5. **Acesse em seu navegador**
+
+   ```bash
+   http://localhost:3000/weather
+   ```
+
+---
+
+## 📚 Aprendizados
+
 Este projeto me proporcionou a prática de:
 
-Consumo de APIs REST com axios
+- Consumo de APIs REST com `axios`
+- Uso de `async/await` e tratamento de erros assíncronos
+- Renderização de páginas com EJS no back-end
+- Manipulação de dados JSON
+- Boas práticas com variáveis de ambiente
+- Estilização dinâmica com base em dados recebidos
 
-Uso de async/await e tratamento de erros assíncronos
+---
 
-Renderização de páginas com EJS no back-end
+## 📌 Status do Projeto
 
-Manipulação de dados JSON
-
-Boas práticas com variáveis de ambiente
-
-Estilização dinâmica com base em dados recebidos
-
-📌 Status do Projeto
 ✅ Finalizado — projeto concluído como parte do processo de aprendizado. Futuras melhorias poderão ser aplicadas conforme o progresso nos estudos.
 
-🤝 Contribuindo
-Este é um projeto pessoal de aprendizado. Se você tiver sugestões ou encontrar algum erro, sinta-se à vontade para abrir uma issue!
+---
 
-👤 Autor
-Camilo Ruas
-🔗 GitHub: @Camiloruas
-🔗 LinkedIn
+## 🤝 Contribuindo
+
+Este é um projeto pessoal de aprendizado, mas sugestões são sempre bem-vindas!
+Se você tiver alguma ideia de melhoria, identificar um erro ou quiser dar um feedback, sinta-se à vontade para registrar um comentário na aba Issues do repositório.
+
+---
+
+## 👤 Autor
+
+**Camilo Ruas**  
+🔗 [GitHub: @Camiloruas](https://github.com/Camiloruas)  
+🔗 [LinkedIn](https://www.linkedin.com/in/camilo-ruas-3a2a6425/)
