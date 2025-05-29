@@ -1,4 +1,4 @@
- 🌦️ Weather Now
+## 🌦️ Weather Now
 
 Um aplicativo web simples e funcional para verificar o clima em qualquer cidade do mundo. Desenvolvido como um projeto de aprendizado para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
 
