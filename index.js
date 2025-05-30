@@ -41,6 +41,8 @@ app.post("/weather", async(req, res)=> {
                 weatherClass = 'sunny';
             } else if (description.includes('nuvens') || description.includes('nublado')) {
                 weatherClass = 'cloudy';
+            } else if (description.includes('névoa') || description.includes('nublado')) {
+                weatherClass = 'mist';
             }
 
             res.render("index.ejs", { dadosTempo: dadosTempo , errorMessage: null, weatherClass: weatherClass });
@@ -58,7 +60,7 @@ app.post("/weather", async(req, res)=> {
 
 const herokuPort = process.env.PORT || 3000;
 app.listen(herokuPort, ()=>{
-    console.log("Servidor rodando na porta " + herokuPort)
+    console.log(" O Servidor rodando na porta " + herokuPort)
 })
 
 
