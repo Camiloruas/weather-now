@@ -50,8 +50,7 @@ Tudo isso em uma interface simples e intuitiva.
 
 2. **Instale as dependências**
    ```bash
-   npm install express ejs axios dotenv
-   ```
+   npm install    ```
 
 
 3. **Crie um arquivo `.env` com sua chave da OpenWeather API**

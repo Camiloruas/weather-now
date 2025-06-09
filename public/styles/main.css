@@ -38,6 +38,15 @@ body.cloudy {
     background-position: center;
 }
 
+body.mist {
+    background-image: url('https://cdn.pixabay.com/photo/2023/01/07/12/15/bridge-7703146_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 /* Título */
 h1 {
     margin-bottom: 30px;
@@ -50,7 +59,7 @@ h1 {
 
 /* Formulário */
 form {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    background-color: white;
     padding: 20px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
