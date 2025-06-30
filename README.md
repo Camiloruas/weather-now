@@ -1,106 +1,68 @@
-## 🌦️ Weather Now
+# Weather Now
 
-Um aplicativo web simples e funcional para verificar o clima em qualquer cidade do mundo. Desenvolvido como um projeto de aprendizado para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
+Um aplicativo web para verificar o clima em qualquer cidade do mundo. Este projeto foi desenvolvido para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
 
-🔗 [Acesse o aplicativo](https://thawing-basin-71658-407b69e3d106.herokuapp.com)
+[Acesse o aplicativo](https://thawing-basin-71658-407b69e3d106.herokuapp.com)
 
-## 📸 Visão Geral
+## Visão Geral
 
-No **Weather Now**, você pode digitar o nome de uma cidade e receber:
+No Weather Now, você pode digitar o nome de uma cidade para obter a temperatura atual e uma descrição do clima. A interface é simples e o fundo da página se adapta dinamicamente às condições climáticas.
 
-- 🌡️ Temperatura atual  
-- 🌤️ Descrição do clima (ex: céu limpo, nublado, chuvoso)  
-- 🖼️ Fundo da página que muda dinamicamente conforme o clima
+## Tecnologias Utilizadas
 
-Tudo isso em uma interface simples e intuitiva.
+- **Back-end:** Node.js, Express
+- **Front-end:** EJS para renderização dinâmica
+- **APIs:** OpenWeather API para dados meteorológicos
+- **Outras ferramentas:** Axios, dotenv
 
----
+## Funcionalidades
 
-## 🛠️ Tecnologias Utilizadas
+- Busca de clima por cidade.
+- Exibição da temperatura e descrição do tempo.
+- Fundo da página dinâmico que reflete o clima.
+- Tratamento de erros para cidades não encontradas.
 
-- **Node.js** – ambiente de execução JavaScript no back-end  
-- **Express** – framework leve para criação do servidor  
-- **EJS** – templates para renderização dinâmica do HTML  
-- **Axios** – cliente HTTP para chamadas à API do clima  
-- **dotenv** – gerenciador de variáveis de ambiente  
-- **OpenWeather API** – dados meteorológicos em tempo real
+## Como Rodar Localmente
 
----
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/Camiloruas/weather-now.git
+    cd weather-now
+    ```
 
-## ✨ Funcionalidades
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-- ✅ Busca por cidade
-- ✅ Exibição de temperatura e descrição do clima
-- ✅ Imagens de fundo que refletem o clima atual
-- ✅ Tratamento de erros para cidades não encontradas
-
----
-
-
-## 🚀 Como Rodar Localmente
-
-1. **Clone o repositório**
-
-   ```bash
-   cd weather-now
-   git clone https://github.com/Camiloruas/weather-now.git
-   ```
-
-
-
-2. **Instale as dependências**
-   ```bash
-   npm install    
-   ```
-
-
-3. **Crie um arquivo `.env` com sua chave da OpenWeather API**
-   ```bash
+3.  **Configure suas variáveis de ambiente:**
+    Crie um arquivo `.env` na raiz do projeto e adicione sua chave da API OpenWeather:
+    ```
     OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
     ```
 
-4. **Inicie o servidor**
+4.  **Inicie o servidor:**
+    ```bash
+    npm start
+    ```
 
-   ```bash
-   npm start
-   ```
+5.  **Acesse a aplicação:**
+    Abra seu navegador e acesse `http://localhost:3000/weather`.
 
-5. **Acesse em seu navegador**
+## Aprendizados
 
-   ```bash
-   http://localhost:3000/weather
-   ```
+Este projeto focou na prática de:
+- Consumo de APIs REST com `axios`.
+- Programação assíncrona com `async/await`.
+- Renderização de views no lado do servidor com EJS.
+- Gerenciamento de chaves de API com variáveis de ambiente.
 
----
+## Status do Projeto
 
-## 📚 Aprendizados
+Projeto finalizado para fins de aprendizado.
 
-Este projeto me proporcionou a prática de:
+## Contato
 
-- Consumo de APIs REST com `axios`
-- Uso de `async/await` e tratamento de erros assíncronos
-- Renderização de páginas com EJS no back-end
-- Manipulação de dados JSON
-- Boas práticas com variáveis de ambiente
-- Estilização dinâmica com base em dados recebidos
-
----
-
-## 📌 Status do Projeto
-
-✅ Finalizado — projeto concluído como parte do processo de aprendizado. Futuras melhorias poderão ser aplicadas conforme o progresso nos estudos.
-
----
-
-## 🤝 Contribuindo
-
-Este é um projeto pessoal de aprendizado, mas sugestões são sempre bem-vindas!
-Se você tiver alguma ideia de melhoria, identificar um erro ou quiser dar um feedback, sinta-se à vontade para registrar um comentário na aba Issues do repositório.
-
----
-
-## 👤 Autor
-
-**Camilo Ruas**  
-🔗 [GitHub: @Camiloruas](https://github.com/Camiloruas)  
-🔗 [LinkedIn](https://www.linkedin.com/in/camilo-ruas-3a2a6425/)
+**Camilo Ruas**
+- [GitHub](https://github.com/Camiloruas)
+- [LinkedIn](https://www.linkedin.com/in/camilo-ruas-3a2a6425/)
