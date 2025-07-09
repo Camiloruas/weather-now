@@ -20,7 +20,7 @@
     "express": "^5.1.0"
   },
   "engines": {
-    "node": "v22.14.0" // Adicione esta linha com a versão do Node.js que você usa
+    "node": "v22.14.0"
   }
 }
 
