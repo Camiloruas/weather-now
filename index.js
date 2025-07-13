@@ -34,15 +34,19 @@ app.post("/weather", async(req, res)=> {
             const dadosTempo = respostaTempo.data;
             let weatherClass = '';
             const description = dadosTempo.weather[0].description.toLowerCase();
+            const currentTime = dadosTempo.dt;
+            const sunrise = dadosTempo.sys.sunrise;
+            const sunset = dadosTempo.sys.sunset;
+            const isDay = currentTime > sunrise && currentTime < sunset;
 
             if (description.includes('chuva')) {
                 weatherClass = 'rainy';
             } else if (description.includes('sol') || description.includes('limpo')) {
-                weatherClass = 'sunny';
+                weatherClass = isDay ? 'sunny' : 'clear-night';
             } else if (description.includes('nuvens') || description.includes('nublado')) {
-                weatherClass = 'cloudy';
-            } else if (description.includes('névoa') || description.includes('nublado')) {
-                weatherClass = 'mist';
+                weatherClass = isDay ? 'cloudy' : 'cloudy-night';
+            } else if (description.includes('névoa')) {
+                weatherClass = isDay ? 'mist' : 'mist-night';
             }
 
             res.render("index.ejs", { dadosTempo: dadosTempo , errorMessage: null, weatherClass: weatherClass });

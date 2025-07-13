@@ -45,6 +45,27 @@ body.mist {
     background-position: center;
 }
 
+body.clear-night {
+    background-image: url('https://images.pexels.com/photos/7147/night-clouds-summer-trees.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.cloudy-night {
+    background-image: url('https://c.pxhere.com/photos/92/0c/cloudy_dark_full_moon_luna_moon_night_sky-1364234.jpg!d');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.mist-night {
+    background-image: url('https://media.istockphoto.com/id/941531924/pt/foto/dramatic-industrial-vintage-river-road-bridge-street-scene-at-night-with-illuminating-fog-in.jpg?s=1024x1024&w=is&k=20&c=SOzAlXsQJmbOimRizCN9mb61vjKf48x0_-0IFMIYmb4=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 /* Título */
