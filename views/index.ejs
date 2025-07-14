@@ -14,17 +14,19 @@
         <button type="submit">Buscar Clima</button>
     </form>
 
-    <div id="weather-container">
-        <% if (locals.dadosTempo) { %>
+    <% if (locals.dadosTempo) { %>
+        <div id="weather-container">
             <h2>Clima em <%= dadosTempo.name %></h2>
             <p>Temperatura: <%= Math.floor(dadosTempo.main.temp - 273.15) %> °C</p>
             <p>Descrição: <%= dadosTempo.weather[0].description %></p>
-        <% } %>
+        </div>
+    <% } %>
 
-        <% if (locals.errorMessage) { %>
+    <% if (locals.errorMessage) { %>
+        <div id="weather-container">
             <p style="color: red;"><%= errorMessage %></p>
-        <% } %>
-    </div>
+        </div>
+    <% } %>
     <footer id="footer">
         © 2025 Camilo Ruas. All rights reserved.
     </footer>
