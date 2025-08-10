@@ -2,7 +2,7 @@
 
 Um aplicativo web para verificar o clima em qualquer cidade do mundo. Este projeto foi desenvolvido para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
 
-[Acesse o aplicativo](weather-now-ashy.vercel.app)
+[Acesse o aplicativo](https://weather-now-ashy.vercel.app/)
 
 ## Visão Geral
 
