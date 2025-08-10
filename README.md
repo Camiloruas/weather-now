@@ -1,26 +1,26 @@
 # Weather Now
 
-Um aplicativo web para verificar o clima em qualquer cidade do mundo. Este projeto foi desenvolvido para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
+Um aplicativo web para verificar o clima em qualquer cidade do mundo. Este projeto foi desenvolvido com React e Vite, focando na criação de uma interface de usuário moderna e no consumo de APIs externas no client-side.
 
 [Acesse o aplicativo](https://weather-now-ashy.vercel.app/)
 
 ## Visão Geral
 
-No Weather Now, você pode digitar o nome de uma cidade para obter a temperatura atual e uma descrição do clima. A interface é simples e o fundo da página se adapta dinamicamente às condições climáticas.
+No Weather Now, você pode digitar o nome de uma cidade para obter a temperatura atual, descrição do clima, sensação térmica, umidade e outras informações meteorológicas. A interface é simples, reativa e estilizada com Tailwind CSS.
 
 ## Tecnologias Utilizadas
 
-- **Back-end:** Node.js, Express
-- **Front-end:** EJS para renderização dinâmica
+- **Front-end:** React, Vite, Tailwind CSS
 - **APIs:** OpenWeather API para dados meteorológicos
-- **Outras ferramentas:** Axios, dotenv
+- **Linguagem:** JavaScript (ES6+)
+- **Ferramentas:** Fetch API para requisições HTTP
 
 ## Funcionalidades
 
 - Busca de clima por cidade.
-- Exibição da temperatura e descrição do tempo.
-- Fundo da página dinâmico que reflete o clima.
-- Tratamento de erros para cidades não encontradas.
+- Exibição da temperatura, descrição do tempo, sensação térmica, umidade, etc.
+- Ícones dinâmicos que refletem as condições climáticas.
+- Tratamento de erros para cidades não encontradas ou falhas na API.
 
 ## Como Rodar Localmente
 
@@ -38,29 +38,31 @@ No Weather Now, você pode digitar o nome de uma cidade para obter a temperatura
     ```
 
 3.  **Configure suas variáveis de ambiente:**
-    Crie um arquivo `.env` na raiz do projeto e adicione sua chave da API OpenWeather:
+    Crie um arquivo `.env` na raiz do projeto e adicione sua chave da API OpenWeather. O Vite exige que as variáveis de ambiente expostas ao cliente comecem com o prefixo `VITE_`.
 
     ```
-    OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
+    VITE_OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
     ```
 
-4.  **Inicie o servidor:**
+4.  **Inicie o servidor de desenvolvimento:**
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 5.  **Acesse a aplicação:**
-    Abra seu navegador e acesse `http://localhost:3000/weather`.
+    Abra seu navegador e acesse o endereço fornecido pelo Vite (geralmente `http://localhost:5173`).
 
 ## Aprendizados
 
 Este projeto focou na prática de:
 
-- Consumo de APIs REST com `axios`.
+- Criação de componentes funcionais com React.
+- Gerenciamento de estado com os hooks `useState` e `useEffect`.
+- Consumo de APIs no client-side usando a Fetch API.
 - Programação assíncrona com `async/await`.
-- Renderização de views no lado do servidor com EJS.
-- Gerenciamento de chaves de API com variáveis de ambiente.
+- Estilização moderna e responsiva com Tailwind CSS.
+- Configuração e uso de variáveis de ambiente em um projeto Vite.
 
 ## Status do Projeto
 
