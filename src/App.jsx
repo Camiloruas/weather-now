@@ -141,7 +141,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 flex items-center justify-center p-4 font-sans">
+    <div className="relative min-h-screen bg-gray-900 text-gray-100 flex items-center justify-center p-4 font-sans">
       <div className="bg-gray-800 bg-opacity-70 backdrop-blur-lg p-8 rounded-3xl shadow-2xl w-full max-w-md border border-gray-700">
         <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
           Clima Agora
@@ -235,6 +235,9 @@ const App = () => {
           </div>
         )}
       </div>
+      <footer className="absolute bottom-0 left-0 w-full text-center p-4 text-gray-500 text-sm">
+        <p>© {new Date().getFullYear()} Camilo Ruas. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
