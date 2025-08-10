@@ -2,7 +2,7 @@
 
 Um aplicativo web para verificar o clima em qualquer cidade do mundo. Este projeto foi desenvolvido para praticar o consumo de APIs externas e a criação de aplicações web dinâmicas com Node.js.
 
-[Acesse o aplicativo](https://thawing-basin-71658-407b69e3d106.herokuapp.com)
+[Acesse o aplicativo](weather-now-ashy.vercel.app)
 
 ## Visão Geral
 
@@ -25,23 +25,27 @@ No Weather Now, você pode digitar o nome de uma cidade para obter a temperatura
 ## Como Rodar Localmente
 
 1.  **Clone o repositório:**
+
     ```bash
     git clone https://github.com/Camiloruas/weather-now.git
     cd weather-now
     ```
 
 2.  **Instale as dependências:**
+
     ```bash
     npm install
     ```
 
 3.  **Configure suas variáveis de ambiente:**
     Crie um arquivo `.env` na raiz do projeto e adicione sua chave da API OpenWeather:
+
     ```
     OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
     ```
 
 4.  **Inicie o servidor:**
+
     ```bash
     npm start
     ```
@@ -52,6 +56,7 @@ No Weather Now, você pode digitar o nome de uma cidade para obter a temperatura
 ## Aprendizados
 
 Este projeto focou na prática de:
+
 - Consumo de APIs REST com `axios`.
 - Programação assíncrona com `async/await`.
 - Renderização de views no lado do servidor com EJS.
@@ -64,5 +69,6 @@ Projeto finalizado para fins de aprendizado.
 ## Contato
 
 **Camilo Ruas**
+
 - [GitHub](https://github.com/Camiloruas)
 - [LinkedIn](https://www.linkedin.com/in/camilo-ruas-3a2a6425/)
