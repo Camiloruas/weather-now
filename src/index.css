@@ -1,0 +1,23 @@
+/* Importa os estilos base do Tailwind CSS, que incluem reinicializações e regras de estilo pré-construídas. */
+@tailwind base;
+
+/* Importa os estilos de componentes do Tailwind, como botões e cards. */
+@tailwind components;
+
+/* Importa as classes de utilitários do Tailwind, como flex, padding, e cores. */
+@tailwind utilities;
+
+/* Define uma fonte global para a sua aplicação. */
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* Adiciona um estilo de transição de cor para elementos interativos. */
+/* Isso garante que as transições de cor do texto sejam suaves e agradáveis. */
+/* É uma boa prática para melhorar a experiência do usuário. */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
